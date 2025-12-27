@@ -21,7 +21,17 @@ The dataset was loaded using the Hugging Face `datasets` library and converted i
 ---
 
 ## Data Cleaning
-Data cleaning involved removing duplicate job postings, handling missing salary values, standardizing country and role names, converting salary fields into numerical format, and filtering out incomplete records. Skill data was normalized by exploding multi-skill entries to enable accurate frequency and salary-based analysis.
+The dataset required multiple preprocessing steps to ensure accuracy and consistency before analysis. The following data cleaning tasks were performed:
+
+- Removed duplicate job postings to avoid skewed counts and salary statistics  
+- Handled missing values in critical fields such as salary and skills by filtering incomplete records  
+- Standardized categorical columns including job titles, country names, and experience levels  
+- Converted salary-related columns into consistent numerical formats for comparison and aggregation  
+- Normalized skill data by splitting and exploding multi-skill entries into individual records  
+- Filtered out outliers and invalid entries that could distort visual trends  
+
+These steps ensured the dataset was reliable and suitable for meaningful visualization and insight generation.
+
 
 ---
 
